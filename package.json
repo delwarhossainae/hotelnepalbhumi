@@ -1,0 +1,18 @@
+{
+  "name": "hotel-nepal-bhumi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python -m http.server 8765 --bind 127.0.0.1",
+    "test": "node tests/qa.mjs",
+    "images": "python tools/build-images.py",
+    "audit": "node tests/responsive-audit.mjs --shots",
+    "test:php": "python tests/php-contact-test.py",
+    "test:contact": "node tests/contact-form-e2e.mjs",
+    "check:assets": "python tools/check-assets.py",
+    "build": "python tools/build-dist.py --domain"
+  },
+  "devDependencies": {
+    "playwright": "1.65.1"
+  }
+}
